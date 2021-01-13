@@ -3,8 +3,14 @@
     <!-- Layout -->
     <Header />
 
+    <b-jumbotron
+      v-bind:style="{ margin: '5rem', background: 'white' }"
+      class="text-center"
+    >
+      <router-view />
+    </b-jumbotron>
+
     <!-- views -->
-    <router-view />
   </div>
 </template>
 
