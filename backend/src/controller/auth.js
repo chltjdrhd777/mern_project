@@ -1,5 +1,6 @@
 const jwt = require("jsonwebtoken");
 const User = require("../model/user");
+const { valdationResult } = require("../validator/auth");
 
 exports.signUp = (req, res) => {
   User.findOne({ email: req.body.email }).exec((error, exist) => {

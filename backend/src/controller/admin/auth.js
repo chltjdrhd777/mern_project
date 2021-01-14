@@ -6,7 +6,7 @@ exports.signUp = (req, res) => {
     if (exist) {
       return res
         .status(400)
-        .json({ message: "the Admin account is already registered" });
+        .json({ message: "the account is already registered" });
     }
 
     const { firstName, lastName, email, password } = req.body;
